@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+URL Encoder/Decoder
+===================
 
-You can use the [editor on GitHub](https://github.com/DevUtilsApp/urldecoder.app/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Encode or decode a URL without online tools. [DevUtils.app](https://devutils.app) allows you to quickly encode or decode a long URL without any internet connection. It also supports various URL encode/decode options like RFC3986 or Form Data.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<p align="center">
+  <img src="https://devutils.app/assets/demo-url-dark.png" alt="DevUtils.app: URL Encoder/Decoder macOS app"/>
+  <br/>
+  <a href="https://devutils.app/">🚀  Download</a> | <a href="https://devutils.app/demo">🎬  Demo & Screenshots</a> | <a href="https://github.com/DevUtilsApp/DevUtils-app">📝  View source</a>
+</p>
 
-### Markdown
+Encode/Decode URLs
+------------------
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You can encode/decode URLs from anywhere in your macOS (terminal, in email, web browser,...). Activate the app by:
 
-```markdown
-Syntax highlighted code block
+* Copy text ► Press ⌃⌥⌘Space `(Or your own customized hotkey, up to you)`
+* Copy text ► Click to icon <img src="https://devutils.app/menu-icon-dark.png" alt="DevUtils.app status bar icon" width="28px" /> in the status bar
+* Select text ► Right-click ► "Inspect in DevUtils.app" `(This menu appears after you install the app)`
 
-# Header 1
-## Header 2
-### Header 3
+Input
+-----
 
-- Bulleted
-- List
+This tool received one input that is the string you want to encode/decode. You can click the "Sample" button to see an example input. If you wish to use the clipboard content as input, click the "Clipboard" button.
 
-1. Numbered
-2. List
+Select the option "Encode" or "Decode" on the top right of the screen.
 
-**Bold** and _Italic_ and `Code` text
+Output
+------
 
-[Link](url) and ![Image](src)
-```
+The output is the encoded/decoded string of the input. You can copy the output to the clipboard by clicking the "Copy" button, or you can use the output as input in case you want to encode/decode multiple times on the same string.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Options
+-------
 
-### Jekyll Themes
+When you activate the app, DevUtils will inspect your clipboard content and automatically select the URL Encoder/Decoder tool if the content contains characters that can be decoded. You can disable this automatic feature by unticking the option in the setting panel (the gear icon).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DevUtilsApp/urldecoder.app/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+![DevUtils.app: URL Encoder/Decoder macOS app](https://devutils.app/assets/settings/setting-url-encoder-decoder.png)
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+By default, the tool will encode the string using the RFC3986 standard. However, you may want to change this depending on your use cases.
